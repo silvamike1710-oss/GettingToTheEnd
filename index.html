@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#4CAF50" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Journal PWA</title>
+</head>
+<body>
+
+  <header>
+    <h1>Journal</h1>
+    <button id="installBtn" hidden>Install App</button>
+  </header>
+
+  <main>
+    <form id="entryForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="description" placeholder="Description" required></textarea>
+      <input type="date" id="date" required />
+      <button type="submit">Add Entry</button>
+    </form>
+
+    <section id="entries"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
